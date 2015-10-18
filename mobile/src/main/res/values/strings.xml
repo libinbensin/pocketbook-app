@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pocketbook</string>
+    <string name="title_activity_landing">Pocket Reminder</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="add_reminder_title">Add Reminder</string>
+    <string name="add_reminder_button_symbol">+</string>
+    <string name="title_activity_add_reminder">Add New Reminder</string>
+    <string name="pick_app_title">Pick an Application</string>
+    <string name="new_reminder_added">New Reminder Added</string>
+    <string name="check_all_inputs">Please check all the required inputs</string>
+    <string name="unable_to_launch_app">Oh Sorry, Unable to launch the application</string>
+
+</resources>

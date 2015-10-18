@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+def AAVersion = '3.2'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.libins.pocketbook.app"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    // sign release build
+    File signingInfo = rootProject.file('/Users/libinsalal/.jenkins/secrets/certs/pocketbook/pocketbook-android.properties');
+    if(signingInfo.exists()){
+        Properties properties = new Properties();
+        properties.load(new FileInputStream(signingInfo))
+        signingConfigs {
+            release {
+                storeFile file(properties.storeFile)
+                storePassword properties.storePassword
+                keyAlias properties.keyAlias
+                keyPassword properties.keyPassword
+            }
+        }
+        buildTypes.release.signingConfig signingConfigs.release
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+}
