@@ -7,12 +7,13 @@
     <FrameLayout
         android:id="@+id/CalendarFragmentLayout"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/calender_height"
+        android:layout_height="wrap_content"
         android:background="@color/CricketBlue"/>
 
     <FrameLayout
         android:id="@+id/ReminderFragmentLayout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CalendarFragmentLayout"/>
 
 </RelativeLayout>

@@ -4,5 +4,5 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="calender_height">200dp</dimen>
     <dimen name="add_reminder_min_height">60dp</dimen>
-    <dimen name="reminder_item_min_height">60dp</dimen>
+    <dimen name="reminder_item_min_height">80dp</dimen>
 </resources>

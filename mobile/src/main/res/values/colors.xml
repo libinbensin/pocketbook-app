@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
     <color name="nav_div_bg">#232323</color>
     <color name="nav_div_txt">#BBB</color>
     <color name="nav_row_div">#000</color>
@@ -161,4 +166,5 @@
     <color name="DarkBlackGreen">#0C361D</color>
     <color name="LightBrightGreen">#428A60</color>
     <color name="LightDimGreen">#779985</color>
+    <color name="divider">#B6B6B6</color>
 </resources>
